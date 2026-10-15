@@ -1,0 +1,173 @@
+/* PensionSteps - Clean Print Stylesheet for Call Plan Worksheet */
+@media print {
+  .site-header,
+  .hero-section,
+  .how-it-works-section,
+  .journeys-section-area,
+  .safeguards-split-section,
+  .faq-section,
+  .cta-callout-section,
+  .site-footer,
+  .breadcrumb-nav-bar,
+  .journey-stepper-bar,
+  .flow-navigation-bar,
+  .btn-queue-toggle,
+  .btn-copy-chip,
+  .modal-overlay,
+  .skip-link,
+  .no-print {
+    display: none !important;
+  }
+
+  html, body {
+    background: #FFFFFF !important;
+    color: #111111 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.4 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .journey-page-wrapper {
+    padding: 0 !important;
+    background: #FFFFFF !important;
+  }
+
+  .call-plan-layout-box,
+  .worksheet-layout-box {
+    border: 1.5pt solid #222222 !important;
+    box-shadow: none !important;
+    padding: 18pt !important;
+    border-radius: 0 !important;
+  }
+
+  .call-plan-print-banner,
+  .worksheet-print-banner {
+    display: block !important;
+    border-bottom: 2pt solid #222222;
+    padding-bottom: 8pt;
+    margin-bottom: 14pt;
+  }
+
+  .call-plan-print-banner h1,
+  .worksheet-print-banner h1 {
+    font-size: 16pt;
+    color: #111111;
+    margin: 0 0 4pt;
+  }
+
+  .call-plan-print-banner p,
+  .worksheet-print-banner p {
+    font-size: 9pt;
+    color: #444444;
+    margin: 0;
+  }
+
+  .call-plan-main-title {
+    font-size: 15pt !important;
+    margin: 0 0 6pt !important;
+  }
+
+  .plan-section-title,
+  .worksheet-section-title-bar {
+    font-size: 11pt !important;
+    border-bottom: 1pt solid #444444 !important;
+    color: #111111 !important;
+    margin-top: 12pt !important;
+    padding-bottom: 3pt !important;
+    page-break-after: avoid;
+  }
+
+  .situation-summary-item {
+    border: 0.5pt solid #888888 !important;
+    padding: 4pt 8pt !important;
+    margin-bottom: 4pt !important;
+    background: #FAFAFA !important;
+    font-size: 9pt !important;
+  }
+
+  .call-plan-status-table,
+  .worksheet-status-table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  .call-plan-status-table tr,
+  .worksheet-status-table tr {
+    border-bottom: 0.5pt solid #888888 !important;
+    page-break-inside: avoid;
+  }
+
+  .call-plan-status-table td,
+  .worksheet-status-table td {
+    padding: 4pt 6pt !important;
+    font-size: 9.5pt !important;
+  }
+
+  .question-card,
+  .retivest-question-card {
+    background: #FFFFFF !important;
+    border: 0.5pt solid #666666 !important;
+    padding: 6pt 8pt !important;
+    margin-bottom: 6pt !important;
+    page-break-inside: avoid;
+    border-radius: 0 !important;
+  }
+
+  .question-quote-text {
+    font-size: 10pt !important;
+    color: #111111 !important;
+    margin-bottom: 2pt !important;
+  }
+
+  .question-aim-text {
+    font-size: 8.5pt !important;
+    color: #444444 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .limit-item-card {
+    border: 0.5pt solid #888888 !important;
+    padding: 4pt 8pt !important;
+    margin-bottom: 4pt !important;
+    page-break-inside: avoid;
+  }
+
+  .guidance-branch-card {
+    border: 0.5pt solid #666666 !important;
+    border-left: 2.5pt solid #222222 !important;
+    padding: 6pt 8pt !important;
+    margin-bottom: 8pt !important;
+    page-break-inside: avoid;
+  }
+
+  .worksheet-log-block {
+    border: 0.5pt solid #444444 !important;
+    background: #FFFFFF !important;
+    padding: 8pt 10pt !important;
+    margin-bottom: 8pt !important;
+    page-break-inside: avoid;
+  }
+
+  .worksheet-write-box {
+    border: 0.5pt dashed #666666 !important;
+    min-height: 45pt !important;
+    background: #FFFFFF !important;
+  }
+
+  .worksheet-write-line {
+    border-bottom: 0.5pt dotted #444444 !important;
+  }
+}
+
+.call-plan-print-banner,
+.worksheet-print-banner {
+  display: none;
+}
