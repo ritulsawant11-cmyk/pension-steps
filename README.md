@@ -132,18 +132,19 @@ This runs TypeScript type-checking (`tsc`), builds the static production bundle 
 
 ## 🌐 Publishing to GitHub Pages
 
-This repository includes an official GitHub Actions deployment workflow at [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+This repository is live on GitHub Pages at **https://ritulsawant11-cmyk.github.io/pension-steps/** and includes a GitHub Actions workflow template at [`deploy.github-workflow.yml`](deploy.github-workflow.yml).
 
-### Initial Setup
-1. Push this repository to your GitHub remote on the `main` branch:
-   ```bash
-   git remote add origin <YOUR_GITHUB_REPOSITORY_URL>
-   git branch -M main
-   git push -u origin main
-   ```
-2. In your GitHub repository, navigate to **Settings → Pages**.
-3. Under **Build and deployment → Source**, select **GitHub Actions**.
-4. The **Deploy PensionSteps to GitHub Pages** workflow will automatically run the Python verification suites, compile and bundle the site into `./dist`, and publish it to your GitHub Pages URL (`https://<username>.github.io/<repo-name>/`).
+---
+
+## ▲ Deploying to Vercel
+
+This repository includes a pre-configured [`vercel.json`](vercel.json) file (`framework: "vite"`, `buildCommand: "npm run build"`, `outputDirectory: "dist"`).
+
+### One-Click Import from GitHub
+1. Open **[https://vercel.com/new](https://vercel.com/new)** and sign in with your GitHub account (`ritulsawant11-cmyk`).
+2. Select the **`ritulsawant11-cmyk/pension-steps`** repository and click **Import**.
+3. Vercel will automatically detect [`vercel.json`](vercel.json) (`npm install` → `npm run build` → `dist/`).
+4. Click **Deploy**. Every subsequent `git push origin main` will automatically trigger a new production deployment on Vercel.
 
 ---
 
@@ -160,5 +161,6 @@ Whenever you make changes to the project:
    git commit -m "Describe your update"
    git push origin main
    ```
-3. GitHub Actions will automatically test, build, and redeploy the updated site within ~1 minute. You can also trigger a manual redeploy at any time from the **Actions** tab using **Run workflow**.
+3. Pushing to `main` automatically updates both **GitHub Pages** and **Vercel**.
+
 
