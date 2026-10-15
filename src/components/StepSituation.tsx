@@ -19,7 +19,6 @@ export const StepSituation: React.FC<StepSituationProps> = ({
   onStartAgain,
 }) => {
   const answeredCount = questions.filter((q) => !!answers[q.id]).length;
-  const allAnswered = answeredCount === questions.length;
 
   return (
     <div className="content-section-panel" aria-labelledby="step1-title">
